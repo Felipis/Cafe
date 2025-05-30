@@ -1,0 +1,330 @@
+:root {
+    --main-color: #30110e;
+    --light-color: #572103;
+    --bg: #fdf8f4;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+     font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    padding-top: 11rem;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+    height: 11rem;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.navbar a:hover {
+    color: var(--light-color);
+    border-bottom: 0.1rem solid var(--light-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.btn{
+    background: var(--main-color);
+    color: #fdf8f4;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url("./img/Coffee-Beans.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-top: 8rem;
+    box-sizing: border-box;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+    text-align: center;
+    transform: translate(-5%);
+    transform: translateY(-28%);
+}
+
+.content h3 {
+    color : var(--bg);
+    font-size: 6rem;
+}
+
+.content p {
+    color: var(--bg);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.title span{
+    color: var(--light-color);
+    text-transform: uppercase;
+}
+
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-color);
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.about .row .container-image {
+    flex: 1 1 40rem; 
+    text-align: center;
+}
+
+.about .row .container-image img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.about .row .content {
+    padding: 3rem;
+    color: var(--main-color);
+    text-align: left;
+    flex: 1 1 45rem;
+    transform: none; 
+    max-width: none;
+    align-self: center; 
+}
+
+.about .row .content h3 {
+    font-size: 3rem; 
+    color: var(--bg);
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: var(--bg); /* Cor clara para o parágrafo */
+    padding: 1rem 0;
+    line-height: 1.8; 
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: var(--light-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background-color: #572103;
+}
+
+.menu .box-container .box:hover>* {
+    color: var(--bg)
+}
+
+.footer {
+    background-color: var(--main-color); 
+    text-align: center;
+    padding: 3rem 2rem; 
+}
+
+.footer .social a img {
+    width: 4rem; 
+    height: auto;
+    font-size: 2rem;
+    color: var(--bg);
+    margin: 0 1rem;
+    border-radius: 50%; 
+    border: 0.1rem solid var(--bg); 
+    display: inline-block; 
+}
+
+.footer .social a img:hover {
+    background-color: var(--light-color); 
+}
+
+.footer .links {
+    margin: 2rem 0;
+}
+
+.footer .links a {
+    font-size: 1.8rem;
+    color: var(--bg);
+    margin: 0 1rem;
+    display: inline-block; 
+    padding: 0.7rem 1.5rem;
+  
+}
+
+.footer .links a:hover {
+    background-color: var(--light-color);
+    color: var(--bg);
+}
+
+.footer .credit {
+    font-size: 1.5rem;
+    color: var(--bg);
+    padding-top: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--light-color);
+}
+
+.about-mvv {
+    padding: 5rem 2rem; 
+    background-color: var(--bg); 
+    margin-top: 4rem; 
+}
+
+.about-mvv .mvv-subtitle {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.about-mvv .mvv-subtitle span {
+    color: var(--light-color);
+}
+
+.about-mvv .mvv-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 3rem; 
+}
+
+.about-mvv .mvv-item {
+    background-color: var(--light-color); 
+    padding: 3rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    flex: 1 1 30rem;
+    max-width: 38rem; 
+    color: var(--bg); 
+}
+
+.about-mvv .mvv-item h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--bg); 
+}
+
+.about-mvv .mvv-item p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-mvv .mvv-item ul {
+    list-style: none; 
+    padding: 0;
+    text-align: left; 
+    margin-top: 1.5rem;
+}
+
+.about-mvv .mvv-item ul li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    color: var(--bg);
+}
